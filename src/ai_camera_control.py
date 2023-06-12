@@ -17,7 +17,7 @@ class CameraAINode(Node):
         self.camera.start_capture()
         self.camera.set_frame_size()
 
-        self.model_path = os.path.join('.', 'src', 'runs', 'detect', 'train2', 'weights', 'last.pt')
+        self.model_path = os.path.join('.', 'src', 'runs', 'detect', 'train', 'weights', 'last.pt')
         self.model = YOLO(self.model_path)
         self.threshold = 0.5
 
